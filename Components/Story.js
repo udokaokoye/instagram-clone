@@ -12,7 +12,7 @@ const Story = ({ image, index, name }) => {
     <View className="relative">
       <LinearGradient
         colors={
-          index == 0
+          index == 224
             ? ["#363636", "#363636"]
             : ["#FFC600", "#FE5A1B", "#E5019E", "#DA00B4"]
         } // Adjust these colors to your gradient
@@ -42,7 +42,7 @@ const Story = ({ image, index, name }) => {
       >
         {index == 0 ? "Your story" : name}
       </CustomText>
-      {index == 0 && (
+      {index == 224 && (
         <View
           style={{ right: 0, bottom: 27, zIndex: 10, width: 20, height: 20 }}
           className=" bg-blue-500 rounded-full absolute flex justify-center items-center"
